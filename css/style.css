@@ -629,7 +629,7 @@ table.schedule tr:last-child td {
   margin-top: 40px;
 }
 
-.video-embed iframe {
+.video-embed video {
   position: absolute;
   inset: 0;
   width: 100%;
