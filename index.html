@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EletricSoftware: Portfólio do Projeto de Estágio</title>
+  <meta name="description" content="Portfólio do projeto de estágio EletricSoftware: sistema web de gestão de clientes, serviços, técnicos, ordens de serviço e pagamentos para prestadores de serviços elétricos autônomos.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-area" id="headerArea">
+      <div class="menu-wrapper">
+        <div class="logo">
+          <a href="#inicio">
+            EletricSoftware
+          </a>
+        </div>
+
+        <div class="main-menu" id="mainMenu">
+          <nav>
+            <ul id="navigation">
+              <li class="active"><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#casos-de-uso">Casos de Uso</a></li>
+              <li><a href="#documentacao">Documentação</a></li>
+              <li><a href="#telas">Telas</a></li>
+              <li><a href="#relatorio">Relatório</a></li>
+              <li><a href="#aluno">Identificação</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <a href="#relatorio" class="btn header-btn">Relatório de Estágio</a>
+
+        <button class="mobile_menu" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="slider-area" id="inicio">
+      <div class="container">
+        <div class="hero__caption">
+          <h1>EletricSoftware.</h1>
+          <p class="cd-headline">Um sistema para
+            <span class="cd-words-wrapper" id="cdWords">
+              <b class="is-visible">Gerenciar Clientes</b>
+              <b>Gerenciar Serviços</b>
+              <b>Gerenciar Técnicos</b>
+              <b>Gerenciar Ordem de Serviço</b>
+              <b>Gerenciar Pagamentos</b>
+              <b>Gerenciar Relatórios</b>
+            </span>
+          </p>
+
+          <p class="hero-desc">
+            O EletricSoftware é uma aplicação web desenvolvida durante o estágio supervisionado do curso de
+            Engenharia de Software para a JRL Eletricista, empresa gerenciada por um eletricista autônomo
+            responsável por instalações e manutenções elétricas residenciais e prediais. O sistema centraliza o
+            cadastro de clientes, serviços, técnicos e ordens de serviço, além de controlar pagamentos,
+            cobranças e relatórios financeiros.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="about-area" id="sobre">
+      <div class="container">
+        <div class="about-row">
+          <div class="about-caption">
+            <div class="section-tittle">
+              <h2>Sobre o Projeto</h2>
+            </div>
+            <p>
+              Antes do EletricSoftware, todo o controle de clientes, serviços e pagamentos da JRL-Eletricista
+              era feito de forma inteiramente informal por conversas no WhatsApp e anotações avulsas, sem
+              qualquer persistência estruturada de dados. Essa forma de organização causava perda de
+              informações, dificultava o acompanhamento financeiro e resultava em uma alta taxa de
+              inadimplência, identificada pelo próprio cliente como o principal problema a ser resolvido.
+            </p>
+            <p>
+              O sistema segue uma arquitetura cliente-servidor: o front-end, em React, consome uma API REST
+              desenvolvida em Spring Boot, responsável pelas regras de negócio, autenticação e persistência
+              dos dados em um banco relacional PostgreSQL.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Java 25</span>
+              <span class="tag">Spring Boot 4.0.5</span>
+              <span class="tag">React 19.2</span>
+              <span class="tag">PostgreSQL 18.3</span>
+              <span class="tag">Spring Security + JWT</span>
+              <span class="tag">Bucket4j</span>
+              <span class="tag">Thymeleaf + OpenHTMLtoPDF</span>
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">RUP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="may-about" id="casos-de-uso">
+      <div class="container">
+        <div class="section-tittle2">
+          <h2>Casos de Uso</h2>
+        </div>
+
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>01 Gerenciar Clientes</h3>
+            <p>Cadastro, consulta, edição e inativação das informações dos clientes, substituindo o controle informal por uma estrutura única e centralizada.</p>
+          </div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>02 Gerenciar Serviços</h3>
+            <p>Cadastro, visualização e edição dos serviços oferecidos pela empresa, usados posteriormente na criação das ordens de serviço.</p>
+          </div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>03 Gerenciar Técnicos</h3>
+            <p>Cadastro, visualização, edição e inativação dos técnicos responsáveis pela execução dos serviços prestados.</p>
+          </div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>04 Gerenciar Ordem de Serviço</h3>
+            <p>Criação e acompanhamento das ordens de serviço, relacionando clientes, serviços e técnicos envolvidos em cada atendimento.</p>
+          </div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>05 Gerenciar Pagamentos</h3>
+            <p>Registro e acompanhamento dos pagamentos realizados pelos clientes, com integração ao Asaas (sandbox) para cobrança.</p>
+          </div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience">
+            <h3>06 Gerenciar Relatórios</h3>
+            <p>Geração e visualização de relatórios com informações consolidadas sobre clientes, serviços e pagamentos, em PDF.</p>
+          </div>
+        </div>
+
+        <div class="section-tittle2 pt-50" id="documentacao">
+          <h2>Documentação</h2>
+        </div>
+
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Diagrama de Casos de Uso</h3><p>Diagrama UML</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1JwpHdDV4rb-EehhliCBPr6jciX6nT0r6/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Diagrama de Classes</h3><p>Diagrama UML</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1-jlrcMHzWjPE2niB2ys1SdtUbz6BWW1T/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Diagrama de Implantação</h3><p>Diagrama UML</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1nguricdldyqNyS865AiKinyzapXSQbuL/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Diagrama de Entidade e Relacionamento (DER)</h3><p>Diagrama UML</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1IYH_tg9i_zRrDJwg1le8mLzEudizWd1Y/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Cliente</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1g8qd-cc7WC8Y0WuXeAv4Lvx1jPURvtXz/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Serviço</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1RniztWmAgAkY1h14OnwdwxVklIu7ntth/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Técnico</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1gc-nRy65b6Rs5plz8PTe1VbkNkJl7KJl/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Ordem de Serviço</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1vLd_WGmSSJbpr8A3_rs-po8BrjUxDdTg/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Pagamentos (Ator Usuário)</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/13ERb0QcM1kuT7foS37mDG3Yf40_cfbMx/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Pagamentos (Ator Asaas)</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1Kx5dAzl7R4gzzsLIJEJowgn_0Yr28Eqk/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Gerenciar Relatórios</h3><p>Diagrama de Sequência</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1mu58jdz4bijC4DyQ1tIeGdjFQeRZ_x-1/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Estado: Cliente</h3><p>Diagrama de Estado</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1fAPozqYAqBayawuJqw3z8HokMFLk0LA_/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Estado: Serviço</h3><p>Diagrama de Estado</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1vNHEuTfxu-pViY-2LoYnrumPhuFbpAgU/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Estado: Técnico</h3><p>Diagrama de Estado</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1GSiaryundAjYaWxnqvVE7S9mUmu066HM/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Estado: Ordem de Serviço</h3><p>Diagrama de Estado</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/13PW1hmW0a9t_7cOEa8HLODf0BXFPe4WQ/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Estado: Pagamento</h3><p>Diagrama de Estado</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1u2mPv-O9IVZTrvIiQ8Z3WDmgbDt9vof5/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+        <div class="single-about">
+          <div class="tittle-experience"><h3>Workflow AS-IS</h3><p>Diagrama BPMN</p></div>
+          <div class="experience-link"><a class="pending" href="https://drive.google.com/file/d/1bQsQmSic50k__lVk4TOTNKvhj9BKfpjT/view?usp=sharing" target="_blank" rel="noopener">link ↗</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-block">
+      <div class="container">
+        <div class="section-tittle2">
+          <h2>Cronograma de Desenvolvimento</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Caso de uso / entrega</th>
+                <th>Status</th>
+                <th>Conclusão</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gerenciar Serviços</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>28/05/2026</td>
+              </tr>
+              <tr>
+                <td>Gerenciar Clientes</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>01/06/2026</td>
+              </tr>
+              <tr>
+                <td>Gerenciar Técnicos</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>24/08/2026</td>
+              </tr>
+              <tr>
+                <td>Gerenciar Ordem de Serviço</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>24/08/2026</td>
+              </tr>
+              <tr>
+                <td>Gerenciar Pagamentos (+ integração Asaas)</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>31/08/2026</td>
+              </tr>
+              <tr>
+                <td>Gerenciar Relatórios</td>
+                <td><span class="status-pill">Concluído</span></td>
+                <td>31/08/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-services">
+      <div class="container">
+        <div class="section-tittle text-center">
+          <h2>Tecnologias Utilizadas</h2>
+        </div>
+        <div class="services-row">
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>Java 25</h5>
+              <p>Linguagem principal do back-end, orientada a objetos e fortemente tipada.</p>
+            </div>
+          </div>
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>Spring Boot 4.0.5</h5>
+              <p>Framework REST do back-end, com Spring Security e autenticação via JWT.</p>
+            </div>
+          </div>
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>React 19.2</h5>
+              <p>Biblioteca do front-end, responsável pela interface web responsiva.</p>
+            </div>
+          </div>
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>PostgreSQL 18.3</h5>
+              <p>Banco de dados relacional utilizado para o armazenamento estruturado.</p>
+            </div>
+          </div>
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>RUP</h5>
+              <p>Rational Unified Process como processo de desenvolvimento do projeto.</p>
+            </div>
+          </div>
+          <div class="single-services">
+            <div class="services-cap">
+              <h5>Thymeleaf + OpenHTMLtoPDF</h5>
+              <p>Geração dos relatórios do sistema em PDF a partir de templates HTML.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="gallery-area" id="telas">
+      <div class="container">
+        <div class="section-tittle">
+          <h2>Telas &amp; Vídeo</h2>
+        </div>
+
+        <!-- TODO: quando tiver o print real, troque o miolo do .gallery-img por:
+             <div class="gallery-img has-image" style="background-image:url(img/telas/ARQUIVO.png)"></div>
+             O clique para ampliar (lightbox) já funciona automaticamente para
+             qualquer .gallery-img.has-image dentro de .box.snake. -->
+        <div class="gallery-row">
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Login</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Clientes</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Serviços</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Técnicos</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Ordens de Serviço</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Pagamentos</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Cobranças</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+          <div class="box snake">
+            <div class="gallery-img">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Relatórios</span>
+            </div>
+            <div class="overlay"><div class="overlay-content"><a href="#">+</a></div></div>
+          </div>
+        </div>
+
+        <!-- TODO: quando tiver o vídeo, apague o .video-box abaixo e descomente o .video-embed,
+             trocando SEU_ID_DO_YOUTUBE (ou use um embed do Google Drive). -->
+        <div class="video-embed" style="display:block">
+          <video controls>
+            src="video/video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="wantToWork-area" id="relatorio">
+      <div class="container wants-wrapper">
+        <div class="wantToWork-caption">
+          <h2>Relatório de Estágio EletricSoftware</h2>
+          <p>
+            Documento completo com introdução, descrição do sistema, modelagem (casos de uso, classes, DER,
+            implantação), documentação de cada caso de uso e conclusões.
+          </p>
+        </div>
+        <a href="docs/EletricSoftware - Relatório de Estágio.pdf" target="_blank" rel="noopener" class="btn white-btn">Abrir PDF do relatório</a>
+      </div>
+    </section>
+
+    <div class="form-wrapper" id="aluno">
+      <div class="container">
+        <div class="small-tittle"><h4>Identificação do Aluno</h4></div>
+        <div class="form-row">
+          <div class="form-box">
+            <label>Nome completo</label>
+            <input type="text" value="Pedro Antonio Lopes de Arruda" readonly>
+          </div>
+          <div class="form-box">
+            <label>Matrícula</label>
+            <input type="text" class="pending" value="241072067" readonly>
+          </div>
+          <div class="form-box">
+            <label>Professor orientador</label>
+            <input type="text" value="Tiago Ravache" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-area">
+      <div class="container footer-border">
+        Portfólio do Projeto de Estágio - EletricSoftware - Centro Universitário Filadélfia de Londrina (UniFil)
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <div id="back-top">
+    <a title="Voltar ao topo" href="#inicio">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
